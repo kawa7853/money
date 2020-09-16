@@ -7,11 +7,11 @@ if os.path.isfile("cm.txt"):
 		for line in f:
 			if "商品,價格" in line:
 				continue
-			s = line.strip().split(",")
-			print(s)
-			name = s[0]
-			price = s[1]
-			products.append([name,price])
+		s = line.strip().split(",")
+		print(s)
+		name = s[0]
+		price = s[1]
+		products.append([name,price])
 else:
 	print("cannot find...")
 
